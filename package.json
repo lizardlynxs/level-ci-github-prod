@@ -1,0 +1,16 @@
+{
+  "name": "level-ci-github-sample",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node app.js",
+    "test:playwright": "npx playwright test"
+  },
+  "devDependencies": {
+    "@level-ci/a11y-playwright": "^0.1.1-preview-20250927012530",
+    "@level-ci/cli": "^0.1.7-alpha.2735",
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^24.5.2",
+    "express": "^5.1.0",
+    "typescript": "^5.9.2"
+  }
+}
