@@ -8,9 +8,9 @@
   "devDependencies": {
     "@level-ci/a11y-playwright": "^0.2.3",
     "@level-ci/cli": "^0.1.18",
-    "@playwright/test": "^1.61.0",
     "@types/node": "^24.5.2",
     "express": "^5.1.0",
+    "playwright-webkit": "^1.61.0",
     "typescript": "^5.9.2"
   }
 }

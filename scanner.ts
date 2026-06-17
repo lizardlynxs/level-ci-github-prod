@@ -1,4 +1,4 @@
-import { webkit } from "playwright";
+import { webkit } from "playwright-webkit";
 import { levelAnalyze, levelSetup } from "@level-ci/a11y-playwright";
 
 const BASE_URL = "http://127.0.0.1:1342";
