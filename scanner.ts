@@ -5,7 +5,7 @@ const BASE_URL = "http://127.0.0.1:1342";
 
 async function scan() {
   levelSetup({ reportPath: "./level-ci-reports" });
-  
+
   const browser = await chromium.launch({ headless: true });
 
   try {
@@ -16,6 +16,10 @@ async function scan() {
     await levelAnalyze(page);
 
     await page.goto(`${BASE_URL}/article.html`);
+    // optional: navigation actions here
+    await levelAnalyze(page);
+
+    await page.goto(`${BASE_URL}/article2.html`);
     // optional: navigation actions here
     await levelAnalyze(page);
 
