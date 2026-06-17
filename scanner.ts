@@ -23,9 +23,9 @@ async function scan() {
     // optional: navigation actions here
     await levelAnalyze(page);
 
-    await page.goto(`${BASE_URL}/terms.html`);
-    // optional: navigation actions here
-    await levelAnalyze(page);
+    // await page.goto(`${BASE_URL}/terms.html`);
+    // // optional: navigation actions here
+    // await levelAnalyze(page);
   } finally {
     await browser.close();
   }
