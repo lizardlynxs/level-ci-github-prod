@@ -30,8 +30,8 @@ jobs:
         run: npm install
         env:
           CLOUDSMITH_TOKEN: ${{ secrets.CLOUDSMITH_TOKEN }}
-      # - name: Install Playwright browsers
-      #   run: npx playwright install chromium
+      - name: Install Playwright browsers
+        run: npx playwright install chromium
       - name: Run Scan
         run: npx tsx scanner.ts
 
