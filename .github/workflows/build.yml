@@ -33,7 +33,7 @@ jobs:
       # - name: Install Playwright browsers
       #   run: npx playwright install chromium
       - name: Run Scan
-        run: npm run scan
+        run: npx tsx scanner.ts
 
       - name: Level CI Accessibility Analysis
         uses: levelaccess/level-ci@main
