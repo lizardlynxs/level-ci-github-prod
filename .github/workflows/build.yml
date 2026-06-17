@@ -20,6 +20,11 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+      - name: Check token
+        run: |
+          echo "Length: ${#CLOUDSMITH_TOKEN}"
+        env:
+          CLOUDSMITH_TOKEN: ${{ secrets.CLOUDSMITH_TOKEN }}
       - name: Install npm packages
         run: npm install
         # env:
