@@ -1,4 +1,4 @@
-import { chromium } from "playwright";
+import { webkit } from "playwright";
 import { levelAnalyze, levelSetup } from "@level-ci/a11y-playwright";
 
 const BASE_URL = "http://127.0.0.1:1342";
@@ -6,7 +6,7 @@ const BASE_URL = "http://127.0.0.1:1342";
 async function scan() {
   levelSetup({ reportPath: "./level-ci-reports" });
 
-  const browser = await chromium.launch({ headless: true });
+  const browser = await webkit.launch({ headless: true });
 
   try {
     const page = await browser.newPage();
@@ -15,7 +15,7 @@ async function scan() {
     // optional: navigation actions here (page.click, page.fill, ...)
     await levelAnalyze(page);
 
-    await page.goto(`${BASE_URL}/article.html`);
+    await page.goto(`${BASE_URL}/privacy2.html`);
     // optional: navigation actions here
     await levelAnalyze(page);
 
