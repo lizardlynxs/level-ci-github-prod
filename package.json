@@ -1,0 +1,15 @@
+{
+  "name": "level-ci-github-sample",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node app.js",
+    "scan": "node scanner.ts"
+  },
+  "devDependencies": {
+    "@level-ci/a11y-manual": "^0.0.1-preview-20260622093726",
+    "@level-ci/cli": "^0.1.19-alpha.3109",
+    "@types/node": "^24.5.2",
+    "express": "^5.1.0",
+    "typescript": "^5.9.2"
+  }
+}
