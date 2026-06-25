@@ -6,7 +6,7 @@
     "scan": "node scanner.ts"
   },
   "devDependencies": {
-    "@level-ci/a11y-manual": "^0.0.1-preview-20260622093726",
+    "@level-ci/a11y-manual": "^0.0.1-preview-20260625084921",
     "@level-ci/cli": "^0.1.19-alpha.3109",
     "@types/node": "^24.5.2",
     "express": "^5.1.0",
